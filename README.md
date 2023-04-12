@@ -1,24 +1,20 @@
 # PEMROGRAMAN-OOP
 Penjelasan Program Penggajian
 
-Program ini adalah sebuah program Python yang menghitung gaji karyawan berdasarkan faktor, seperti gaji pokok, golongan karyawan, jumlah anak, status pernikahan, pajak, dan bonus.
-Pada awal program, sebuah kelas Employee didefinisikan yang memiliki lima atribut: 
-1. name (name menyimpan nama karyawan)
-2. salary (salary menyimpan gaji pokok karyawan)
-3. grade (grade menyimpan golongan karyawan (dari 1 hingga 4))
-4. num_children (um_children menyimpan jumlah anak karyawan)
-5. married (married menyimpan status pernikahan karyawan)
+Program ini adalah sebuah kelas Python yang menghitung gaji karyawan berdasarkan input yang diberikan oleh pengguna. Berikut adalah penjelasan tentang bagaimana program ini bekerja:
 
-Fungsi get_salary() dari kelas Employee digunakan untuk menghitung gaji bersih karyawan setelah dikurangi pajak dan ditambahkan bonus. 
-1. Program menghitung tunjangan golongan berdasarkan grade karyawan
-2. Program menghitung tunjangan anak berdasarkan jumlah anak karyawan
-3. Program juga menghitung tunjangan istri/suami berdasarkan status pernikahan karyawan
-4. setelah itu, Program menghitung total gaji sebelum pajak dengan menambahkan gaji pokok, tunjangan golongan, tunjangan anak, dan tunjangan istri/suami
-5. Kemudian, program menghitung pajak berdasarkan total gaji sebelum pajak
-6. Selanjutnya, program menghitung bonus berdasarkan golongan karyawan dan jumlah anak
-7. Akhirnya, program menghitung gaji bersih karyawan setelah dikurangi pajak dan ditambahkan bonus dengan menggunakan fungsi get_salary() dari objek Employee
+Kelas Employee memiliki beberapa atribut yaitu name (nama karyawan), salary (gaji pokok), grade (golongan), num_children (jumlah anak), dan married (status pernikahan). Kelas ini memiliki sebuah metode get_salary() yang menghitung gaji bersih karyawan setelah dikurangi pajak dan ditambahkan bonus.
 
-Menggunakan fungsi input() untuk mengambil input dari user berupa nama karyawan, gaji pokok, golongan, jumlah anak, dan status pernikahan. Setelah menerima input dari pengguna, program akan membuat objek Employee baru dengan memanggil konstruktor kelas Employee
-Setelah itu program akan mencetak atau mengoutputkan informasi gaji karyawan dengan mengakses atribut dan metode dari objek employee
+Program akan meminta input dari pengguna berupa nama karyawan, gaji pokok, golongan, jumlah anak, dan status pernikahan (ya/tidak). Input tersebut akan digunakan untuk membuat objek Employee baru.
+
+Program akan mencetak informasi gaji karyawan berdasarkan atribut-atribut yang ada di objek Employee. Informasi yang dicetak antara lain:
+
+1. Nama Karyawan: nama karyawan yang diambil dari atribut name objek Employee.
+2. Gaji Pokok: gaji pokok karyawan yang diambil dari atribut salary objek Employee.
+3. Tunjangan Golongan: tunjangan golongan karyawan yang dihitung berdasarkan rumus (0.05 + grade * 0.05) dikalikan dengan gaji pokok karyawan. Jika golongan (grade) karyawan adalah 0, maka tunjangan golongan akan menjadi 0.
+4. Tunjangan Anak: tunjangan anak karyawan yang dihitung dengan mengalikan jumlah anak (num_children) dengan 0.02 kali gaji pokok karyawan.
+5. Tunjangan Istri/Suami: tunjangan istri/suami karyawan yang diambil dari atribut married objek Employee. Jika karyawan sudah menikah (married = True), maka tunjangan istri/suami akan menjadi 0.1 kali gaji pokok karyawan, jika tidak maka tunjangan istri/suami akan menjadi 0.
+6. Bonus: bonus karyawan yang dihitung berdasarkan golongan (grade) karyawan. Jika golongan adalah 1 dan jumlah anak (num_children) lebih dari atau sama dengan 1, maka bonus akan menjadi 500000, jika golongan adalah 2, maka bonus akan menjadi 1000000, jika golongan adalah 3, maka bonus akan menjadi 1500000, jika golongan adalah 4, maka bonus akan menjadi 2000000, dan jika golongan bukan 1, 2, 3, atau 4, maka bonus akan menjadi 0.
+7.  Gaji Bersih: gaji bersih karyawan yang dihitung menggunakan metode get_salary() dari objek Employee. Metode ini menghitung gaji karyawan setelah dikurangi pajak dan ditambahkan bonus.
 
 
