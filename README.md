@@ -1,9 +1,15 @@
 # PEMROGRAMAN-OOP
-Penjelasan Program Penggajian
+Deskripsi Program Penggajian :
 
 Program ini adalah sebuah kelas Python yang menghitung gaji karyawan berdasarkan input yang diberikan oleh pengguna. Berikut adalah penjelasan tentang bagaimana program ini bekerja:
 
-Kelas Employee memiliki beberapa atribut yaitu name (nama karyawan), salary (gaji pokok), grade (golongan), num_children (jumlah anak), dan married (status pernikahan). Kelas ini memiliki sebuah metode get_salary() yang menghitung gaji bersih karyawan setelah dikurangi pajak dan ditambahkan bonus.
+Kelas Employee memiliki beberapa atribut yaitu 
+- name (nama karyawan)
+- salary (gaji pokok)
+- grade (golongan)
+- num_children (jumlah anak) 
+- married (status pernikahan)
+Kelas ini memiliki sebuah metode get_salary() yang menghitung gaji bersih karyawan setelah dikurangi pajak dan ditambahkan bonus.
 
 Program akan meminta input dari pengguna berupa nama karyawan, gaji pokok, golongan, jumlah anak, dan status pernikahan (ya/tidak). Input tersebut akan digunakan untuk membuat objek Employee baru.
 
